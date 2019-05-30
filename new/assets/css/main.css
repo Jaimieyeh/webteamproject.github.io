@@ -225,8 +225,9 @@ input, select, textarea {
 		color: rgba(128, 128, 128, 0.75);
 		font-size: 0.8em;
 	}
-
+	
 /* Container */
+
 
 	.container {
 		margin: 0 auto;
@@ -273,6 +274,11 @@ input, select, textarea {
 			}
 
 		}
+
+/* Box */
+	#Box {
+		width: 100%
+	}
 
 /* Row */
 
@@ -413,6 +419,14 @@ input, select, textarea {
 
 		.row > .off-12 {
 			margin-left: 100%;
+		}
+
+		.row > .col-13 {
+			width: 25%;
+		}
+
+		.row > .off-13 {
+			margin-left: 25%;
 		}
 
 		.row.gtr-0 {
@@ -1787,7 +1801,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
+			width:100%;
 		}
 
 		.image.fit {
@@ -1805,9 +1819,7 @@ input, select, textarea {
             width: 70%;
             margin: 0 0 0 4.5em;
         }
-
-
-        .image.video{
+         .image.video{
             display: block;
             width: 67%;
             margin: 0 3em 0 0;
@@ -1824,10 +1836,10 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			.image.centered img {
+		.image.centered img {
 				margin: 0 auto;
 				width: auto;
-			}
+		}
 
 /* List */
 
