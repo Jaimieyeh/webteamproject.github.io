@@ -6,6 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
+     <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>s
 <head>
 	<title>那些年，你不能錯過的影劇</title>
 	<meta charset="utf-8" />
@@ -301,7 +344,7 @@
 							<table border="0">
 								<tr>
 									<td align="left" valign="left">
-										<a href="#" class="image poster"><img src="http://4.bp.blogspot.com/-sVkOZjXCtwg/VQ0g1-S5p-I/AAAAAAAABiw/qXWztBi5wG8/s800/%E8%8E%AB%E9%9D%9E%20%E9%80%99%E5%B0%B1%E6%98%AF%E6%84%9B%E6%83%85.jpg" height="450" style="width:340px" alt="" /></a>
+										<a href="#" class="image poster"><img src="https://img.linetv.tw/medium/drama/10166-poster.jpg" height="450" style="width:340px" alt="" /></a>
 									</td>
 									<td align="left" valign="left">
 										<a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/L3-o37J8QiE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
@@ -393,7 +436,7 @@
 							<table border="0">
 								<tr>
 									<td align="left" valign="left">
-										<a href="#" class="image poster"><img src="http://a4.att.hudong.com/88/00/01300000179019121453005186960.jpg" height="450" style="width:340px" alt="" /></a>
+										<a href="#" class="image poster"><img src="https://www.wandouys.com/Uploads/vod/2017-10-10/59dc4ae8e66dc.jpg" height="450" style="width:340px" alt="" /></a>
 									</td>
 									<td align="left" valign="left">
 										<a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/9SgBbFTQjyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
@@ -422,7 +465,7 @@
 										https://upload.wikimedia.org/wikipedia/zh/e/e2/%E5%85%AC%E5%85%B1%E9%9B%BB%E8%A6%96%E9%9B%BB%E8%A6%96%E5%8A%87%E9%80%9A%E9%9D%88%E5%B0%91%E5%A5%B3.jpg<br>
 										https://www.youtube.com/watch?v=L3-o37J8QiE&list=PL8tksSNaOW7XwTfdjCNS6Efg-Ti74tkPF&index=5
 										<br>
-										http://4.bp.blogspot.com/-sVkOZjXCtwg/VQ0g1-S5p-I/AAAAAAAABiw/qXWztBi5wG8/s800/%E8%8E%AB%E9%9D%9E%20%E9%80%99%E5%B0%B1%E6%98%AF%E6%84%9B%E6%83%85.jpg<br>
+										https://img.linetv.tw/medium/drama/10166-poster.jpg<br>
 										https://www.youtube.com/watch?v=y6lb-Wx16kw
 										<br>
 										http://www.bestdvd.com.tw/upload/product/0314954001312783266.jpg<br>
@@ -435,7 +478,7 @@
 										<br>
 										https://youtu.be/9SgBbFTQjyg
 										<br>
-										http://a4.att.hudong.com/88/00/01300000179019121453005186960.jpg<br>
+										https://www.wandouys.com/Uploads/vod/2017-10-10/59dc4ae8e66dc.jpg<br>
 										https://www.youtube.com/watch?v=WI-tq2jvU5E
 										<br>
 										https://pic.pimg.tw/a5976855/1552729485-1258201965.jpg<br>

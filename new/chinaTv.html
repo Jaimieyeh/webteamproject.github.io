@@ -6,6 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
+     <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>
 <head>
   <title>那些年，你不能錯過的影劇</title>
   <meta charset="utf-8" />
@@ -397,7 +440,7 @@
             <table border="0">
                 <tr>
                  <td align="left" valign="left">
-                    <a href="#" class="image poster"><img src="http://media.bastillepost.com/wp-content/uploads/hongkong/2018/08/20180815_EN_%E5%BB%B6%E7%A6%A7-9.jpg" height="450" style="width:340px" alt="" /></a>
+                    <a href="#" class="image poster"><img src="http://muye.tv/images/yanxigonglv.jpg" height="450" style="width:340px" alt="" /></a>
                 </td>
                 <td align="left" valign="left">
                     <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/r-Dj7fwY_BE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
@@ -480,7 +523,7 @@
                         https://www.youtube.com/watch?v=GjQAw9CJfLY<br>
                         https://www.elle.com.hk/var/ellehk/storage/images/celebrity/feature/mainland-drama-eternal-love/fwe/22778460-1-chi-HK/Fwe_img_885_590.jpg<br>
                         https://www.youtube.com/watch?v=r-Dj7fwY_BE<br>
-                        http://media.bastillepost.com/wp-content/uploads/hongkong/2018/08/20180815_EN_%E5%BB%B6%E7%A6%A7-9.jpg<br>
+                        http://muye.tv/images/yanxigonglv.jpg<br>
                         https://www.youtube.com/watch?v=J8usKkyoTlw<br>
                         http://imgur.tiktak.tv/uploads/2018/08/17/71b4018652a0410174d45af9f220598b.jpg<br>
                         https://www.youtube.com/watch?v=qDbH3hErNVQ<br>

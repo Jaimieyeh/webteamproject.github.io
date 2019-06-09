@@ -6,6 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
+     <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>
 	<head>
 		<title>那些年，你不能錯過的影劇</title>
 		<meta charset="utf-8" />
@@ -316,7 +359,7 @@
                         <table border="0">
                             <tr>
                                  <td align="left" valign="left">
-                        <a href="#" class="image poster"><img src="https://s.yimg.com/fz/api/res/1.2/Tw9SVYIMefms.PY47XsHeg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTE3MDtxPTgw/https://s.yimg.com/vu/movies/fp/mpost/33/13/3313.jpg" height="450" style="width:340px" alt="" /></a>
+                        <a href="#" class="image poster"><img src="http://i-7.vcimg.com/crop/6c7108c6bfadc931611443f26fb784dd177457(600x)/thumb.jpg" height="450" style="width:340px" alt="" /></a>
                                 </td>
                                 <td align="left" valign="left">
                     <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/j0_lTU8_hV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
@@ -400,7 +443,7 @@
                         <table border="0">
                             <tr>
                                  <td align="left" valign="left">
-                        <a href="#" class="image poster"><img src="https://s.yimg.com/fz/api/res/1.2/9fheT7XXoaMHOg9Nc3He8g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTE3MDtxPTgw/https://movies.tw.campaign.yahoo.net/i/o/production/movies/March2019/G9rCDbMHymy2KcGXC5u4-3253x4652.jpg" height="450" style="width:340px" alt="" /></a>
+                        <a href="#" class="image poster"><img src="https://capri.org.au/wp-content/uploads/2019/03/TOYSTORY4_CARNIVAL_PAYOFF_AUSTRALIA1.jpg" height="450" style="width:340px" alt="" /></a>
                                 </td>
                                 <td align="left" valign="left">
                     <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/VgbltGRMVjs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
@@ -445,15 +488,14 @@
                         <a href="#" class="image poster"><img src="http://n.sinaimg.cn/ent/transform/644/w598h846/20190418/URnR-hvvuiyn0491056.jpg" height="450" style="width:340px" alt="" /></a>
                                 </td>
                                 <td align="left" valign="left">
-                    <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/WTNnsRP5-cA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
+                    <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/WTNnsRP5-cA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                                     </a>
                                 </td>
                             </tr>
                         </table>
-                    </body>
-                    
-                    
-				</div>
+                        </div>
+</div>
+</div>
 
 			<!-- Footer -->
 				<div id="footer">
@@ -475,7 +517,7 @@
                                         
 										https://www.youtube.com/embed/EIFUxlglhZk<br>
                                         
-										https://s.yimg.com/fz/api/res/1.2/Tw9SVYIMefms.PY47XsHeg--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTE3MDtxPTgw/https://s.yimg.com/vu/movies/fp/mpost/33/13/3313.jpg<br>
+										http://i-7.vcimg.com/crop/6c7108c6bfadc931611443f26fb784dd177457(600x)/thumb.jpg<br>
                                         
 										https://www.youtube.com/embed/j0_lTU8_hV8<br>
                                         
@@ -489,7 +531,7 @@
                                         
 										https://www.youtube.com/embed/w_1N-k53PX8<br>
                                         
-										https://s.yimg.com/fz/api/res/1.2/9fheT7XXoaMHOg9Nc3He8g--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTE3MDtxPTgw/https://movies.tw.campaign.yahoo.net/i/o/production/movies/March2019/G9rCDbMHymy2KcGXC5u4-3253x4652.jpg<br>
+										https://capri.org.au/wp-content/uploads/2019/03/TOYSTORY4_CARNIVAL_PAYOFF_AUSTRALIA1.jpg<br>
                                         
 										https://www.youtube.com/embed/VgbltGRMVjs<br>
                                         

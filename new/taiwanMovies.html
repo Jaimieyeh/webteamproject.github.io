@@ -6,6 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
+     <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>
    
 	<head>
 		<title>那些年，你不能錯過的影劇</title>
@@ -462,7 +505,7 @@
                         <a href="#" class="image poster"><img src="https://www.momovod.com/upload/vod/2018-09-21/15374571748.jpg" height="450" style="width:340px" alt="" /></a>
                                 </td>
                                 <td align="left" valign="left">
-                    <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/ZnRWD1kJ6k4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br><br><br>
+                    <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/ZnRWD1kJ6k4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
                                     </a>
                                 </td>
                             </tr>
@@ -522,7 +565,7 @@
 						</div>
 					</div>
 				</div>
-    </body></html>
+    
 			</div>
 
 			<script src="assets/js/jquery.min.js"></script>

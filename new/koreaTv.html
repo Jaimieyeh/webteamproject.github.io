@@ -6,7 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
-	<head>
+    <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>
+    <head>
 		<title>那些年，你不能錯過的影劇</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -627,7 +669,7 @@
                         <table border="0">
                             <tr>
                                  <td align="left" valign="left">
-                        <a href="#" class="image poster"><img src="https://i.pinimg.com/originals/ca/d7/83/cad7832258d159b017576b5804218d6b.jpg" height="450" style="width:340px" alt="" /></a>
+                        <a href="#" class="image poster"><img src="https://farm5.staticflickr.com/4663/26330331068_c62a72453f_o.jpg" height="450" style="width:340px" alt="" /></a>
                                 </td>
                                 <td align="left" valign="left">
                     <a href="#" class="image video"><iframe width="700" height="450" src="https://www.youtube.com/embed/aofT007I98I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
@@ -665,7 +707,7 @@
                                         https://www.youtube.com/watch?v=Lm6MO2DUvMU<br>
                                         http://image.ijq.tv/201611/09/15-08-12-45-26.jpg<br>
                                         https://www.youtube.com/watch?v=aofT007I98I<br>
-                                        https://i.pinimg.com/originals/ca/d7/83/cad7832258d159b017576b5804218d6b.jpg<br>
+                                        
                                         https://www.youtube.com/watch?v=11fCO1Oy4EA<br>
                                         https://img.ruten.com.tw/s1/3/2d/43/21711517497667_671.jpg<br>
                                         https://www.youtube.com/watch?v=rnXf8lO7e1M<br>
