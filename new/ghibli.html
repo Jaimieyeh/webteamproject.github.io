@@ -6,6 +6,49 @@
 -->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 <html>
+    <a href="#top" id="gotop">︽</a>
+    <script src="js/jquery.min.js">
+       $("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+    </script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+		$(document).ready(function(){
+  		$("#hide").click(function(){
+  		  $("section").hide();
+ 		 });
+ 		 $("#show").click(function(){
+   		 $("section").show();
+  		});
+		});
+	</script>
+    
+    <style>
+        #gotop {
+            position: fixed;
+            border-radius: 50px;
+            right: 20px;
+            bottom: 30px;
+            padding: 10px 16px;
+            font-size: 25px;
+            background: rgba(228, 211, 211, 0.36);
+            color: #FAFCFD;
+            cursor: pointer;
+            z-index: 1000;
+            background-color: dimgray;
+        }
+</style>
 	<head>
 		<title>那些年，你不能錯過的影劇</title>
 		<meta charset="utf-8" />
@@ -421,7 +464,7 @@
 											<h3>輔仁大學</h3>
 										</header>
 										<p>醫學資訊與創新應用學士學位學程</p>
-										<p>資料來源：<br>
+										<p>資料出處<br>
 										https://www.youtube.com/watch?v=6LxOfIw1mPc<br>https://static.wixstatic.com/media/b09d22_fbcd69255e594a739ca3f6f5a045e6e1~mv2.jpg/v1/fit/w_498,h_732,q_90/file.jpg<br>
 										https://www.youtube.com/watch?v=nIJtnWp_MGI<br>
 										http://hbimg.b0.upaiyun.com/5f4a44da2bfc79c5cdb518daa91a33bb7f9c26f48b779-Vy1DYF_fw658<br>
